@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - JavaScript</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"  crossorigin="anonymous"></script>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+
+        }
+        
+        #nav{
+            overflow-y:scroll; height: 650px;text-align: center;font-weight: bold; 
+            background-color: #2a9d8f;
+            }
+            #nav ul li a{
+                  
+                  color: cornsilk;
+                  padding: 20px;
+              }
+            #nav ul li a:hover{
+                  background-color: white;
+                  border-radius: 15px;
+                  color: black;
+              }
+        
+            @media (max-width: 550px) {
+                .row{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    
+                }
+    
+                body{
+                    padding: 10px;
+                }
+                 #nav {
+                    max-height:300px;  
+                    border: 2px solid black;  
+                    background-color: black;  
+                    color: aliceblue; 
+              }
+              #nav ul li a{
+                  
+                  color: white;
+                  font-size: 20px;
+              }
+              #nav ul li a:hover{
+                  background-color: #fae1dd;
+                  border-radius: 15px;
+                  color: black;
+              }
+              #h1{
+            text-align:center ;background-color: #ff6b6b;height: 60px;padding: 10px;box-sizing: border-box;position:unset;width:100%;z-index: 2;
+            filter: drop-shadow(7px 3px 3px black);
+            opacity: 0.8;
+        }
+              
+            }         
+        #content{
+            background-color: #d7d7d7;
+            box-sizing: border-box;
+            height: 650px;
+            overflow-y: scroll;
+           
+        }
+        section{
+            line-height: 2;
+        }
+        #h1{
+            text-align:center ;background-color: #ff6b6b;height: 60px;padding: 10px;box-sizing: border-box;position: fixed;width:70%;z-index: 2;
+            filter: drop-shadow(7px 3px 3px black);
+            opacity: 0.8;
+        }
+
+        
+    </style>
+   
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-3 " id="nav"> 
+            <h1>Content</h1>
+            <ul class="nav flex-column">
+                <li class="nav-item ">
+                  <a class="nav-link" href="#intro">introduction</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#overview">overview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#syntax">syntax</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#var" tabindex="-1" aria-disabled="true">variable</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#opera">operators</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#if">if</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#switch">switch</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#while" tabindex="-1" aria-disabled="true">while</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#for">for</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#func">function</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#event">event</a>
+                  </li>
+                                    
+                  
+              </ul>
+        </div>
+        <div class="col-sm-9" id="content">
+            <h1 id="h1">JavaScript</h1>
+            
+            <section id="intro">
+                <br><br>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>
+                            <h3>Introduction</h3>
+                            JavaScript is the world's most popular programming language.<br>
+        
+                            JavaScript is the programming language of the Web.<br>
+        
+                            JavaScript is easy to learn.<br>
+        
+                            This tutorial will teach you JavaScript from basic to advanced.<br><br>
+        
+                            JavaScript is a lightweight, interpreted programming language. It is designed for creating network-centric applications. It is complimentary to and integrated with Java. JavaScript is very easy to implement because it is integrated with HTML. It is open and cross-platform.<br>
+                         
+                        </p>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/js.png" width="400px" height="400px" style="filter: drop-shadow(10px 5px 3px rgb(85, 78, 78));">
+                    </div>
+                
+                </div>
+                 <h2> Why to Learn Javascript</h2>
+                 <ul>
+        <li>Javascript is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. I will list down some of the key advantages of learning Javascript</li>
+
+        <li> Javascript is the most popular programming language in the world and that makes it a programmer’s great choice. Once you learnt Javascript, it helps you developing great front-end as well as back-end softwares using different Javascript based frameworks like jQuery, Node.JS etc.</li>
+
+        <li> Javascript is everywhere, it comes installed on every modern web browser and so to learn Javascript you really do not need any special environment setup. For example Chrome, Mozilla Firefox , Safari and every browser you know as of today, supports Javascript.</li>
+
+        <li> Javascript helps you create really beautiful and crazy fast websites. You can develop your website with a console like look and feel and give your users the best Graphical User Experience.</li>
+
+        <li>JavaScript usage has now extended to mobile app development, desktop app development, and game development. This opens many opportunities for you as Javascript Programmer.</li>
+
+        <li>Due to high demand, there is tons of job growth and high pay for those who know JavaScript. You can navigate over to different job sites to see what having JavaScript skills looks like in the job market.</li>
+
+        <li>Great thing about Javascript is that you will find tons of frameworks and Libraries already developed which can be used directly in your software development to reduce your time to market.</li>
+                        
+</ul>
+</p>
+<hr>
+            </section>
+            <section id="overview">
+                <h3>overview</h3>
+                <p>
+                What is JavaScript ?<br>
+JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities.
+
+JavaScript was first known as LiveScript, but Netscape changed its name to JavaScript, possibly because of the excitement being generated by Java. JavaScript made its first appearance in Netscape 2.0 in 1995 with the name LiveScript. The general-purpose core of the language has been embedded in Netscape, Internet Explorer, and other web browsers.
+
+The ECMA-262 Specification defined a standard version of the core JavaScript language.
+
+JavaScript is a lightweight, interpreted programming language.
+Designed for creating network-centric applications.
+Complementary to and integrated with Java.
+Complementary to and integrated with HTML.
+Open and cross-platform<br>
+Client-Side JavaScript<br>
+Client-side JavaScript is the most common form of the language. The script should be included in or referenced by an HTML document for the code to be interpreted by the browser.
+
+It means that a web page need not be a static HTML, but can include programs that interact with the user, control the browser, and dynamically create HTML content.
+
+The JavaScript client-side mechanism provides many advantages over traditional CGI server-side scripts. For example, you might use JavaScript to check if the user has entered a valid e-mail address in a form field.
+
+The JavaScript code is executed when the user submits the form, and only if all the entries are valid, they would be submitted to the Web Server.
+
+JavaScript can be used to trap user-initiated events such as button clicks, link navigation, and other actions that the user initiates explicitly or implicitly.
+
+Advantages of JavaScript<br>
+The merits of using JavaScript are −
+
+Less server interaction − You can validate user input before sending the page off to the server. This saves server traffic, which means less load on your server.
+
+Immediate feedback to the visitors − They don't have to wait for a page reload to see if they have forgotten to enter something.
+
+Increased interactivity − You can create interfaces that react when the user hovers over them with a mouse or activates them via the keyboard.
+
+Richer interfaces − You can use JavaScript to include such items as drag-and-drop components and sliders to give a Rich Interface to your site visitors.
+
+Limitations of JavaScript<br>
+We cannot treat JavaScript as a full-fledged programming language. It lacks the following important features −
+
+Client-side JavaScript does not allow the reading or writing of files. This has been kept for security reason.
+
+JavaScript cannot be used for networking applications because there is no such support available.
+
+JavaScript doesn't have any multi-threading or multiprocessor capabilities.
+
+Once again, JavaScript is a lightweight, interpreted programming language that allows you to build interactivity into otherwise static HTML pages.
+
+JavaScript Development Tools<br>
+One of major strengths of JavaScript is that it does not require expensive development tools. You can start with a simple text editor such as Notepad. Since it is an interpreted language inside the context of a web browser, you don't even need to buy a compiler.
+
+To make our life simpler, various vendors have come up with very nice JavaScript editing tools. Some of them are listed here −
+
+Microsoft FrontPage − Microsoft has developed a popular HTML editor called FrontPage. FrontPage also provides web developers with a number of JavaScript tools to assist in the creation of interactive websites.
+
+Macromedia Dreamweaver MX − Macromedia Dreamweaver MX is a very popular HTML and JavaScript editor in the professional web development crowd. It provides several handy prebuilt JavaScript components, integrates well with databases, and conforms to new standards such as XHTML and XML.
+
+Macromedia HomeSite 5 − HomeSite 5 is a well-liked HTML and JavaScript editor from Macromedia that can be used to manage personal websites effectively.
+
+Where is JavaScript Today ?<br>
+The ECMAScript Edition 5 standard will be the first update to be released in over four years. JavaScript 2.0 conforms to Edition 5 of the ECMAScript standard, and the difference between the two is extremely minor.
+
+The specification for JavaScript 2.0 can be found on the following site: http://www.ecmascript.org/
+
+Today, Netscape's JavaScript and Microsoft's JScript conform to the ECMAScript standard, although both the languages still support the features that are not a part of the standard.
+</p>
+<hr>
+</section>
+<section id="syntax">
+    <h3>Syntax</h3>
+    <p>
+        JavaScript can be implemented using JavaScript statements that are placed within the  HTML tags in a web page.
+
+You can place the  tags, containing your JavaScript, anywhere within your web page, but it is normally recommended that you should keep it within the head tags.
+The script tag takes two important attributes −
+
+Language − This attribute specifies what scripting language you are using. Typically, its value will be javascript. Although recent versions of HTML (and XHTML, its successor) have phased out the use of this attribute.
+    </p>
+    <hr>
+</section>
+         <section id="var">
+            <h3>Variable</h3>
+             <p>
+                JavaScript Datatypes
+                One of the most fundamental characteristics of a programming language is the set of data types it supports. These are the type of values that can be represented and manipulated in a programming language.
+                
+                JavaScript allows you to work with three primitive data types −
+                
+                Numbers, eg. 123, 120.50 etc.
+                
+                Strings of text e.g. "This text string" etc.
+                
+                Boolean e.g. true or false.
+                
+                JavaScript also defines two trivial data types, null and undefined, each of which defines only a single value. In addition to these primitive data types, JavaScript supports a composite data type known as object. We will cover objects in detail in a separate chapter.
+                
+                Note − JavaScript does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as floating-point values. JavaScript represents numbers using the 64-bit floating-point format defined by the IEEE 754 standard.
+                
+                JavaScript Variables
+                Like many other programming languages, JavaScript has variables. Variables can be thought of as named containers. You can place data into these containers and then refer to the data simply by naming the container.
+             </p>
+             <hr>
+         </section>   
+         <section id="opera">
+            <h3>operators</h3>
+             <p>
+                What is an Operator?<br>
+                Let us take a simple expression 4 + 5 is equal to 9. Here 4 and 5 are called operands and ‘+’ is called the operator. JavaScript supports the following types of operators.<br>
+                
+                Arithmetic Operators<br>
+                Comparison Operators<br>
+                Logical (or Relational) Operators<br>
+                Assignment Operators<br>
+                Conditional (or ternary) Operators<br>
+             </p>
+             <hr>
+         </section>
+         <section id="if">
+            <h3>If</h3>
+             <p><br>
+                JavaScript supports conditional statements which are used to perform different actions based on different conditions. Here we will explain the if..else statement.
+
+                Flow Chart of if-else
+                The following flow chart shows how the if-else statement works.
+                
+                Decision Making
+                JavaScript supports the following forms of if..else statement −
+                
+                if statement
+                
+                if...else statement
+                
+                if...else if... statement.
+             </p>
+             <hr>
+         </section>
+         <section id="switch">
+            <h3>switch</h3>
+             <p><br>
+                The objective of a switch statement is to give an expression to evaluate and several different statements to execute based on the value of the expression. The interpreter checks each case against the value of the expression until a match is found. If nothing matches, a default condition will be used.<br>
+
+                switch (expression) {
+                   case condition 1: statement(s)
+                   break;
+                   
+                   case condition 2: statement(s)
+                   break;
+                   ...
+                   
+                   case condition n: statement(s)
+                   break;
+                   
+                   default: statement(s)
+                }
+             </p>
+             <hr>
+         </section>
+         <section id="while">
+            <h3>While</h3>
+             <p>
+            The most basic loop in JavaScript is the while loop which would be discussed in this chapter. The purpose of a while loop is to execute a statement or code block repeatedly as long as an expression is true. Once the expression becomes false, the loop terminates.<br>
+
+            While loop
+            Syntax
+            The syntax of while loop in JavaScript is as follows −
+            
+            while (expression) {
+               Statement(s) to be executed if expression is true
+            }
+             </p>
+             <hr>
+         </section>
+         <section id="for">
+            <h3>For Loop</h3>
+             <p>
+                The 'for' loop is the most compact form of looping. It includes the following three important parts −
+
+                The loop initialization where we initialize our counter to a starting value. The initialization statement is executed before the loop begins.
+                
+                The test statement which will test if a given condition is true or not. If the condition is true, then the code given inside the loop will be executed, otherwise the control will come out of the loop.
+                
+                The iteration statement where you can increase or decrease your counter.
+                
+                You can put all the three parts in a single line separated by semicolons.
+                
+               <br>
+                For Loop
+                Syntax
+                The syntax of for loop is JavaScript is as follows −
+                
+                for (initialization; test condition; iteration statement) {
+                   Statement(s) to be executed if test condition is true
+                }
+             </p>
+             <hr>
+         </section>
+
+         <section id="func">
+            <h3>function</h3>
+             <p>
+                A function is a group of reusable code which can be called anywhere in your program. This eliminates the need of writing the same code again and again. It helps programmers in writing modular codes. Functions allow a programmer to divide a big program into a number of small and manageable functions.
+
+                Like any other advanced programming language, JavaScript also supports all the features necessary to write modular code using functions. You must have seen functions like alert() and write() in the earlier chapters. We were using these functions again and again, but they had been written in core JavaScript only once.
+                
+                JavaScript allows us to write our own functions as well. This section explains how to write your own functions in JavaScript.
+                
+                Function Definition
+                Before we use a function, we need to define it. The most common way to define a function in JavaScript is by using the function keyword, followed by a unique function name, a list of parameters (that might be empty), and a statement block surrounded by curly braces.
+                <br>
+                Syntax
+                The basic syntax is shown here.
+                
+                
+                      function functionname(parameter-list) {
+                         statements
+                      }
+                 
+             </p>
+             <hr>
+         </section>
+         <section id="event">
+            <h3>Event</h3>
+             <p>
+                What is an Event ?<br>
+                JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page.
+                
+                When the page loads, it is called an event. When the user clicks a button, that click too is an event. Other examples include events like pressing any key, closing a window, resizing a window, etc.
+                
+                Developers can use these events to execute JavaScript coded responses, which cause buttons to close windows, messages to be displayed to users, data to be validated, and virtually any other type of response imaginable.
+                
+                Events are a part of the Document Object Model (DOM) Level 3 and every HTML element contains a set of events which can trigger JavaScript Code.
+             </p>
+             <hr>
+         </section>
+        </div>
+    </div>
+</body>
+</html>
